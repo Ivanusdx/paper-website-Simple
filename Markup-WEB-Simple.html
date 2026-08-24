@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,36 +13,29 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-block">
-        <div class="header-block-logo">
-          <span class="header-title-logo">simple</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="17"
-            fill="none"
-            viewBox="0 0 32 17"
-          >
-            <rect width="31" height="16" x=".5" y=".5" stroke="#333" rx="8" />
-          </svg>
-        </div>
-        <nav class="header-navigation">
-          <ul class="header-list-points-nav">
-            <li class="text-nav">Продукция</li>
-            <li class="text-nav">Материалы</li>
-            <li class="text-nav">О нас</li>
-            <li class="text-nav">Контакты</li>
-          </ul>
-        </nav>
-        <details class="header-menu">
-          <summary>
-             <svg
+  <div class="header-block">
+    <div class="header-block-logo">
+      <span class="header-title-logo">simple</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="17"
+        fill="none"
+        viewBox="0 0 32 17"
+      >
+        <rect width="31" height="16" x=".5" y=".5" stroke="#333" rx="8" />
+      </svg>
+    </div>
+    <nav class="header-navigation">
+       <details class="header-menu">
+      <summary>
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           width="18"
           height="18"
           fill="none"
           viewBox="0 0 18 18"
-          class="icon-closs"
+          class="icon-close"
         >
           <path
             fill="#4c5866"
@@ -52,7 +45,7 @@
             stroke-linecap="round"
           />
         </svg>
-           <svg
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="17"
@@ -67,15 +60,23 @@
             clip-rule="evenodd"
           />
         </svg>
-          </summary>
-              <ul class="header-menu-list-item">
-            <li class="text-nav">Продукция</li>
-            <li class="text-nav">Материалы</li>
-            <li class="text-nav">О нас</li>
-            <li class="text-nav">Контакты</li>
-          </ul>
-        </details>
-        <div class="header-block-icons">
+      </summary>
+       <!-- Мобильное меню -->
+        <ul class="header-menu-list-item">
+        <a href="#0"><li class="text-nav">Продукция</li></a>
+        <a href="#0"><li class="text-nav">Материалы</li></a>
+        <a href="#0"><li class="text-nav">О нас</li></a>
+        <a href="#0"><li class="text-nav">Контакты</li></a>>
+      </ul>
+    </details>
+    <!-- Декстопная и планшетная меню -->
+      <ul class="header-list-points-nav">
+        <a href="#0"><li class="text-nav">Продукция</li></a>
+        <a href="#0"><li class="text-nav">Материалы</li></a>
+        <a href="#0"><li class="text-nav">О нас</li></a>
+        <a href="#0"><li class="text-nav">Контакты</li></a>
+      </ul>
+     <div class="header-block-icons">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -95,9 +96,7 @@
               />
             </g>
             <defs>
-              <clipPath id="a">
                 <path fill="#fff" d="M24 0H0v24h24z" />
-              </clipPath>
             </defs>
           </svg>
           <svg
@@ -123,10 +122,25 @@
             </defs>
           </svg>
         </div>
-      </div>
-      <hr class="header-foter-line" />
-    </header>
-    <main></main>
+  </div>
+  <hr class="header-foter-line" />
+    </nav>
+</header>
+    <main>
+      <section class="hero">
+        <div class="hero-block">
+          <h1 class="hero-title">Простые вещи. Из бумаги</h1>
+          <p class="text">Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками. </p>
+          <button class="hero-button">Каталог</button>
+        </div>
+        <img src="./Image/tube.png" alt="Тубус для бумаг" class="hero-picture">
+      </section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
     <footer></footer>
+    <script src="./Js-simple-engines.js"></script>
   </body>
 </html>
