@@ -77,11 +77,14 @@
 }
 
 .content-width {
+  padding: 90px 165px;
 }
 
 .hero {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  position: relative;
 }
 
 .hero-block {
@@ -103,6 +106,7 @@
 .text {
   font-size: 18px;
   color: #85859b;
+  line-height: 170%;
 }
 
 .hero-button {
@@ -117,7 +121,55 @@
 .hero-picture {
   width: 540px;
   margin-top: 60px;
-  margin-right: 165px;
+  right: 165px;
+  position: absolute;
+}
+
+.composition-paper {
+  background-color: #ebebeb;
+  position: relative;
+  min-height: 165px;
+}
+
+.composition-paper-list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.composition-levels-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  border-top: 1px solid #c0c0c0;
+  padding-top: 20px;
+}
+
+.composition-levels-cards-title {
+  font-size: 18px;
+  color: #666666;
+}
+
+.composition-paper-block {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 90px;
+}
+
+.composition-block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 59px;
+}
+
+.composition-paper-title {
+  font-size: 40px;
+  font-weight: 400;
+  color: #666666;
 }
 
 @media (max-width: 1439px) {
@@ -149,6 +201,10 @@
     margin-left: 0;
   }
 
+  .content-width {
+    padding: 60px 39px;
+  }
+
   .header-foter-line {
     display: block;
     position: absolute;
@@ -166,8 +222,32 @@
   }
 
   .hero-picture {
+    position: static;
     width: 270px;
     margin-right: 39px;
+  }
+
+  .composition-levels-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .composition-paper-block {
+    margin-top: 40px;
+  }
+
+  .composition-block-text {
+    margin-top: 0px;
+  }
+
+  .composition-paper-picture {
+    width: 330px;
+    height: 256px;
+  }
+
+  .composition-paper-title {
+    font-size: clamp(1.875rem, 1.3rem + 1.3333vw, 2.5rem);
   }
 }
 
@@ -181,6 +261,10 @@
 
   .header-block-icons {
     right: 33px;
+  }
+
+  .content-width {
+    padding: 60px 33px;
   }
 
   .hero-block {
@@ -204,6 +288,32 @@
     width: 195px;
     margin-right: 33px;
     margin-top: 20px;
+  }
+
+  .composition-levels-picture {
+    width: 150px;
+    height: 111px;
+  }
+
+  .composition-levels-cards-title {
+    font-size: 16px;
+  }
+
+  .composition-paper-block {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .composition-block-text {
+    gap: 14px;
+  }
+
+  .composition-paper-picture {
+    height: 255px;
+  }
+
+  .composition-paper-title {
+    font-size: clamp(1.5rem, 0.4375rem + 3.3333vw, 1.875rem);
   }
 }
 
@@ -261,6 +371,10 @@
     position: static;
   }
 
+  .content-width {
+    padding: 60px 15px;
+  }
+
   .hero-block {
     margin: 49px 16px 49px 15px;
     gap: 15px;
@@ -281,5 +395,31 @@
 
   .hero-picture {
     display: none;
+  }
+
+  .composition-paper-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .composition-levels-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .composition-levels-picture {
+    width: 130px;
+    height: 96px;
+  }
+
+  .composition-paper-block {
+    margin-top: 60px;
+  }
+
+  .composition-paper-picture {
+    width: 290px;
+    height: 223px;
   }
 }
