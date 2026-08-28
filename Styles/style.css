@@ -20,7 +20,7 @@
 .header-block-logo::before {
   display: inline-block;
   content: "";
-  width: 17px;
+  width: 18px;
   height: 17px;
   border: 1px solid #333333;
   border-radius: 50px;
@@ -30,7 +30,7 @@
 .header-block-logo::after {
   display: inline-block;
   content: "";
-  width: 17px;
+  width: 18px;
   height: 17px;
   border: 1px solid #333333;
   border-radius: 50px;
@@ -281,6 +281,22 @@
   transform: rotate(15deg);
 }
 
+.brands {
+  background-color: #ebebeb;
+}
+
+.brands-block {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.brand-picture {
+  width: 255px;
+  height: 135px;
+}
+
 @media (max-width: 1439px) {
   body {
     min-width: 765px;
@@ -360,39 +376,43 @@
   }
 
   .cards-goods-sales {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px 30px;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+  }
 
-.cards-packaging1-picture {
-  left: 45px;
-}
+  .cards-packaging1-picture {
+    left: 45px;
+  }
 
-.cards-packaging2-picture {
-  left: 42px;
-}
+  .cards-packaging2-picture {
+    left: 42px;
+  }
 
-.cards-packaging3-picture {
-  left: 105px;
-}
+  .cards-packaging3-picture {
+    left: 105px;
+  }
 
-.card-paper-picture {
-  left: 50px;
-}
+  .card-paper-picture {
+    left: 50px;
+  }
 
-.cards-case-picture {
-  left: 55px;
-}
+  .cards-case-picture {
+    left: 55px;
+  }
 
-.cards-folder-picture {
-  left: 63px;
-}
+  .cards-folder-picture {
+    left: 63px;
+  }
 
-.cards-box-picture {
-  left: 160px;
-}
+  .cards-box-picture {
+    left: 160px;
+  }
 
+  .brand-picture {
+    width: 150px;
+    height: 80px;
+  }
 }
 
 @media (max-width: 689px) {
@@ -461,47 +481,58 @@
   }
 
   .card-goods-description {
-  gap: 4px;
-}
+    gap: 4px;
+  }
 
-.card-goods-title {
-  font-size: clamp(1.5rem, 0.4375rem + 3.3333vw, 1.875rem);
-}
+  .card-goods-title {
+    font-size: clamp(1.5rem, 0.4375rem + 3.3333vw, 1.875rem);
+  }
 
-    .cards-goods-sales {
-  gap: 40px 30px;
-}
+  .cards-goods-sales {
+    gap: 40px 30px;
+  }
 
-.cards-packaging1-picture {
-  left: 10px;
-}
+  .cards-packaging1-picture {
+    left: 10px;
+  }
 
-.cards-packaging2-picture {
-  left: 8px;
-}
+  .cards-packaging2-picture {
+    left: 8px;
+  }
 
-.cards-packaging3-picture {
-  left: 70px;
-}
+  .cards-packaging3-picture {
+    left: 70px;
+  }
 
-.card-paper-picture {
-  left: 23px;
-  width: 195px;
-}
+  .card-paper-picture {
+    left: 23px;
+    width: 195px;
+  }
 
-.cards-case-picture {
-  left: 43px;
-}
+  .cards-case-picture {
+    left: 43px;
+  }
 
-.cards-folder-picture {
-  left: 40px;
-  width: 123px;
-}
+  .cards-folder-picture {
+    left: 40px;
+    width: 123px;
+  }
 
-.cards-box-picture {
-  left: 115px;
-  width: 92px;
-}
+  .cards-box-picture {
+    left: 115px;
+    width: 92px;
+  }
+
+  .brands-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .brand-picture {
+    width: 240px;
+    height: 127px;
+  }
 }
 
 @media (max-width: 509px) {
@@ -611,40 +642,50 @@
   }
 
   .cards-goods-sales {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
 
-.cards-packaging1-picture {
-  left: 29px;
-}
+  .cards-packaging1-picture {
+    left: 29px;
+  }
 
-.cards-packaging2-picture {
-  left: 20px;
-}
+  .cards-packaging2-picture {
+    left: 20px;
+  }
 
-.cards-packaging3-picture {
-  left: 85px;
-}
+  .cards-packaging3-picture {
+    left: 85px;
+  }
 
-.card-paper-picture {
-  left: 40px;
-  width: 217px;
-}
+  .card-paper-picture {
+    left: 40px;
+    width: 217px;
+  }
 
-.cards-case-picture {
-  left: 35px;
-}
+  .cards-case-picture {
+    left: 35px;
+  }
 
-.cards-folder-picture {
-  left: 60px;
-  width: 123px;
-}
+  .cards-folder-picture {
+    left: 60px;
+    width: 123px;
+  }
 
-.cards-box-picture {
-  left: 140px;
-  width: 92px;
-}
-}
+  .cards-box-picture {
+    left: 140px;
+    width: 92px;
+  }
 
+  .brands-block {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .brand-picture {
+    width: 150px;
+    height: 80px;
+  }
+}
