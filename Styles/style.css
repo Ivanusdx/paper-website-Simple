@@ -56,9 +56,17 @@
   gap: 60px;
 }
 
+.header-list-points-nav a:hover{
+  color: #7875FE;
+}
+
+.header-list-points-nav a:focus{
+  color: #4946B4;
+}
+
 .header-list-points-nav a:focus-visible{
   background-color: #DAD9FB;
-  outline: none;
+  color: #4C5866;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -66,10 +74,6 @@
 .text-nav {
   font-size: 20px;
   color: #4c5866;
-}
-
-.text-nav:hover{
-  color: #7875FE;
 }
 
 .header-menu {
@@ -82,6 +86,70 @@
   gap: 30px;
   margin-left: 60px;
 }
+
+.header-search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap: 6px;
+}
+
+.input-search{
+  border: none;
+  border-bottom: 2px solid #D1D1E5; 
+  font-size: 20px;
+  width: 224px;
+}
+
+.input-search:focus-visible{
+  outline: none;
+  background-color: #DAD9FB;
+}
+
+.input-search-cross{
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  z-index: 1;
+    right: 5px;
+  top: 8px;
+}
+
+.search-block::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #D1D1E5;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  right: 0px;
+  top: 2px;
+}
+
+  .header-search[open] {
+    display: none;
+  }
+
+.icon-search g:hover,
+.icon-exit g:hover{
+  stroke: #7875FE;
+}
+
+.header-block-icons a:focus .icon-search g path,
+.header-block-icons a:focus .icon-exit g path {
+  stroke: #4946B4;
+}
+
+.header-block-icons a:focus-visible .icon-search,
+.header-block-icons a:focus-visible .icon-exit, 
+.header-block-icons a:focus-visible .icon-search g path,
+.header-block-icons a:focus-visible .icon-exit g path {
+  stroke: #7875FE;
+  background-color: #DAD9FB;
+}
+
 
 .header-foter-line {
   display: none;
@@ -128,6 +196,23 @@
   padding: 23px 94px;
   margin-right: auto;
   cursor: pointer;
+}
+
+.button-style:hover{
+  background-color: #7875FE;
+  color: #fff;
+}
+
+.button-style:focus{
+  background-color: #4946B4;
+   color: #fff;
+}
+
+.button-style:focus-visible{
+  background-color: #DAD9FB;
+  color: #7875FE;
+  border: 1px solid #7875FE;
+  outline: none;
 }
 
 .hero-picture {
@@ -254,6 +339,27 @@
 .card-goods-link {
   font-size: 20px;
   color: #7875fe;
+  margin-right: auto;
+}
+
+.icon-arrow path:hover,
+.card-goods-link:hover{
+  color: #4946B4;
+  stroke: #4946B4;
+}
+
+.icon-arrow path:focus,
+.card-goods-link:focus{
+  color: #4946B4;
+  stroke: #4946B4;
+}
+
+.icon-arrow path:focus-visible,
+.card-goods-link:focus-visible{
+  color: #7875fe;
+  stroke: #7875fe;
+  background-color: #DAD9FB;
+  padding: 4px;
 }
 
 .card-paper-picture {
@@ -325,6 +431,10 @@
   max-width: 500px;
 }
 
+.purchase-sketchbook-block p{
+  padding-bottom: 22px;
+}
+
 .purchase-button {
   padding-left: 94px;
   padding-right: 94px;
@@ -338,7 +448,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 90px;
+  margin-top: 98px;
   margin-right: 165px;
 }
 
@@ -412,6 +522,28 @@
   flex-direction: row;
   gap: 30px;
   align-items: center;
+}
+
+.platform{
+  width: 20px;
+  height: 20px;
+}
+
+.footer-platforms-list-item path:hover{
+  fill: #DAD9FB;
+}
+
+.footer-platforms-list-item a:focus path {
+  fill: #7875FE;
+}
+
+.footer-platforms-list-item a:focus-visible {
+  border: 4px solid #7875FE;
+
+}
+
+.footer-platforms-list-item a:focus-visible path {
+  fill: #FFFFFF;
 }
 
 @media (max-width: 1439px) {
@@ -732,22 +864,59 @@
   }
 
   .icon-burger {
+    display: block;
     width: 21px;
     height: 21px;
   }
+
+    .icon-burger path:hover{
+  fill: #7875FE;
+}
 
   .icon-close {
     display: none;
     width: 21px;
     height: 21px;
-    margin-bottom: 22px;
   }
+
+.icon-close path:hover{
+  stroke: #7875FE ;
+}
+
+.header-menu summary:focus-visible,
+.header-menu summary:focus-visible svg path {
+  background-color: #DAD9FB;
+  outline: none;
+  fill: #7875FE;
+  padding: 2px;
+}
+
+.input-search{
+  width: 160px;
+}
 
   .header-menu-list-item {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-top: 22px;
   }
+
+.header-menu-list-item a:hover {
+  color: #7875FE;
+}
+
+.header-menu-list-item a:focus {
+  color: #4946B4;
+}
+
+.header-menu-list-item a:focus-visible {
+  background-color: #DAD9FB;
+  color: #4C5866;
+  padding-left: 5px;
+  padding-right: 5px;
+  outline: none;
+}
 
   .header-block-icons {
     margin-left: auto;
