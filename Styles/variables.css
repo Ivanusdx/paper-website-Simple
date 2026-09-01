@@ -1,0 +1,13 @@
+:root {
+  --header-border-color: #dddddd;
+  --logo-border-color: #333333;
+  --logo-title-color: #333333;
+  --text-nav-color: #4c5866;
+  --input-border-color: #d1d1e5;
+  --circle-search-color: #d1d1e5;
+
+  --hover-nav-color: #7875fe;
+  --focus-nav-color: #4946b4;
+  --focus-visible-nav-color: #4c5866;
+  --focus-visible-nav-bg: #dad9fb;
+}
