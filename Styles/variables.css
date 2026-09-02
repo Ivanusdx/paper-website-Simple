@@ -1,13 +1,64 @@
 :root {
+  --text-dark-color-grey: #85859b;
+  --text-light-color-gray: #b5b5bd;
+  --title-color: #666666;
   --header-border-color: #dddddd;
-  --logo-border-color: #333333;
-  --logo-title-color: #333333;
-  --text-nav-color: #4c5866;
-  --input-border-color: #d1d1e5;
-  --circle-search-color: #d1d1e5;
+  --header-logo-border-color: #333333;
+  --header-logo-title-color: #333333;
 
-  --hover-nav-color: #7875fe;
-  --focus-nav-color: #4946b4;
-  --focus-visible-nav-color: #4c5866;
-  --focus-visible-nav-bg: #dad9fb;
+  --text-nav-color: #4c5866;
+  --nav-hover-color: #7875fe;
+  --nav-focus-color: #4946b4;
+  --nav-focus-visible-color: #4c5866;
+  --nav-focus-visible-bg: #dad9fb;
+
+  --input-border-color: #d1d1e5;
+  --circle-input-color: #d1d1e5;
+  --circle-input-hover-bg: #7875fe;
+  --circle-input-focus-bg: #4946b4;
+  --circle-input-focus-visible-bg: #dad9fb;
+  --circle-input-focus-visible-border: #7875fe;
+
+  --circle-cross-hover-focus-stroke: #fff;
+  --circle-cross-focus-visible-stroke: #4c5866;
+
+  --icons-light-hover-stroke: #7875fe;
+  --icons-dark-hover-stroke: #4946b4;
+  --icons-focus-stroke: #4946b4;
+  --icons-focus-visible-stroke: #7875fe;
+  --icons-focus-visible-bg: #dad9fb;
+
+  --hero-title-color: #4c5866;
+
+  --button-color: #7875fe;
+  --button-border-color: #7875fe;
+  --button-hover-bg: #7875fe;
+  --button-focus-bg: #4946b4;
+  --button-hover-focus-color: #fff;
+  --button-focus-visible-color: #7875fe;
+  --button-focus-visible-bg: #dad9fb;
+  --button-focus-visible-border: #7875fe;
+
+  --composition-paper-bg: #ebebeb;
+  --composition-cards-border: #c0c0c0;
+  --composition-title-color: #666666;
+
+  --cards-block-bg: #ebebeb;
+  --cards-link-color: #7875fe;
+  --cards-link-hover-color: #4946b4;
+  --cards-link-focus-color: #4946b4;
+  --cards-link-focus-visible-color: #7875fe;
+  --cards-link-focus-visible-bg: #dad9fb;
+
+  --brands-bg-color: #ebebeb;
+
+  --footer-bg-color: #4c5866;
+  --footer-logo-border-color: #fff;
+  --footer-logo-title-color: #fff;
+  --footer-text-color: #4c5866;
+
+  --footer-platforms-hover-fill: #dad9fb;
+  --footer-platforms-focus-fill: #7875fe;
+  --footer-platforms-focus-visible-border: #7875fe;
+  --footer-platforms-focus-visible-fill: #fff;
 }
